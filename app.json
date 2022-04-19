@@ -1,0 +1,29 @@
+{
+    "name": "Translator-telegram-bot",
+    "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot. Create your Fork now.",
+    "keywords": [
+        "telegram",
+        "google",
+        "translator"
+    ],
+    "website": "https://github.com/TG-AI/Translator-Chatbot",
+    "repository": "https://github.com/TG-AI/Translator-Chatbot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
